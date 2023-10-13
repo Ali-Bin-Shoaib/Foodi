@@ -203,9 +203,24 @@
 .dishes-cards-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	margin: 5rem 0rem;
-	gap: 3rem;
+	width: 100%;
+	height: 40rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide-container {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	gap: 2rem;
+	position: absolute;
+	left: 25px;
+	transform: translateX(0px);
+	transition: transform 1s;
+	border-radius: 2rem;
 }
 .dish-card {
 	display: flex;
@@ -280,6 +295,11 @@ footer div:last-of-type i:hover {
 }
 .font-size-big {
 	font-size: 50px;
+}
+.circle {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
 }
 .p-1 {
 	padding: 1rem;
@@ -358,17 +378,17 @@ footer div:last-of-type i:hover {
 .border-circle {
 	border-radius: 50%;
 }
-.border-radius-top-circle {
-	border-radius: 50% 50% 10% 10%;
-}
-.border-eye {
-	border-radius: 0% 50% 0% 50%;
-}
 .border-5 {
 	border: 5px solid var(--white);
 }
 .border-top-left {
 	border-radius: 0% 20px 20px 20px;
+}
+.border-radius-top-circle {
+	border-radius: 50% 50% 10% 10%;
+}
+.border-eye {
+	border-radius: 0% 50% 0% 50%;
 }
 .position-relative {
 	position: relative;
@@ -411,9 +431,4 @@ footer div:last-of-type i:hover {
 }
 .shadow-bottom {
 	box-shadow: 0px 10px 25px 0px rgb(205, 205, 205);
-}
-.circle {
-	width: 1rem;
-	height: 1rem;
-	border-radius: 50%;
 }
