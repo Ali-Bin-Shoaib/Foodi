@@ -181,8 +181,8 @@
 .img-container > div + img {
 	width: 70%;
 	position: absolute;
-	top: -60px;
-	left: 200px;
+	top: -12%;
+	left: 28%;
 }
 .categories-container {
 	display: flex;
@@ -197,6 +197,16 @@
 	border-radius: 20px;
 	padding: 1rem;
 }
+.heart-icon {
+	padding: 1rem;
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 0% 50% 0% 50%;
+}
+
 .category-card img {
 	border-radius: 50%;
 }
