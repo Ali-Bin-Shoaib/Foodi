@@ -169,20 +169,21 @@
 	height: 500px;
 	background: var(--primary-color);
 	border-radius: 50%;
+	position: relative;
 }
 .popup {
 	border: none;
 	border-radius: 25px 25px 0px 25px;
 	background-color: var(--white);
 	position: absolute;
-	left: 200px;
+	left: 0;
 	padding: 0.5rem 1rem;
 }
 .img-container > div + img {
-	width: 70%;
+	width: 100%;
 	position: absolute;
-	top: -12%;
-	left: 28%;
+	top: -11%;
+	left: -2%;
 }
 .categories-container {
 	display: flex;
