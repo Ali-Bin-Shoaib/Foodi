@@ -36,6 +36,7 @@
 		<link href="./assets/vendors/fontawesome-free-6.4.2-web/css/regular.css" rel="stylesheet" />
 		<!-- -->
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="shortcut icon" href="./assets/images/Group 20.svg" type="image/x-icon" />
 	</head>
 
 	<body class="bg-primary">
@@ -83,7 +84,7 @@
 					</ul>
 					<div class="nav-search">
 						<i class="fa fa-search cursor-pointer"></i>
-						<div class="cursor-pointer">
+						<div>
 							<p class="cart-items-badge bg-color-primary text-color-light">8</p>
 							<i class="fa fa-bag-shopping"></i>
 						</div>
@@ -178,11 +179,14 @@
 				<div class="flex-space-between-center">
 					<h1 class="text-capitalize font-size-big w-40">standout dishes from our menu</h1>
 					<div>
-						<i class="fa fa-angle-left border-circle p-1 circle m-r-2 bg-color-gray"></i>
-						<i class="fa fa-angle-right border-circle p-1 circle bg-color-primary text-color-light"></i>
+						<!-- <i class="fa fa-angle-left border-circle p-1 circle m-r-2 bg-color-gray"></i>
+						<i class="fa fa-angle-right border-circle p-1 circle bg-color-primary text-color-light"></i> -->
 					</div>
 				</div>
 				<div class="dishes-cards-container">
+					
+					<i class="fa fa-angle-left left-control bg-color-gray"></i>
+					<i class="fa fa-angle-right right-control bg-color-gray"></i>
 					<div class="slide-container">
 						<div class="dish-card bg-color-white shadow-bottom">
 							<i class="fa fa-heart text-color-light bg-color-primary heart-icon"></i>
@@ -198,7 +202,7 @@
 							</div>
 						</div>
 						<div class="dish-card bg-color-white shadow-bottom">
-							<i class="fa fa-regular fa-heart text-color-light bg-color-primary heart-icon"></i>
+							<i class="fa fa-heart text-color-light bg-color-primary heart-icon"></i>
 							<img class="dish-img" src="./assets/images/Vegetable salad.png" alt="Vegetable salad" />
 							<h2 class="text-capitalize">vegetable salad</h2>
 							<small class="text-capitalize">description of the item</small>
@@ -211,7 +215,7 @@
 							</div>
 						</div>
 						<div class="dish-card bg-color-white shadow-bottom">
-							<i class="fa fa-regular fa-heart text-color-light bg-color-primary heart-icon"></i>
+							<i class="fa fa-heart text-color-light bg-color-primary heart-icon"></i>
 							<img class="dish-img" src="./assets/images/Egg salad.png" alt="Egg salad" />
 							<h2 class="text-capitalize">egg vegi salad</h2>
 							<small class="text-capitalize">description of the item</small>
@@ -237,7 +241,7 @@
 							</div>
 						</div>
 						<div class="dish-card bg-color-white shadow-bottom">
-							<i class="fa fa-regular fa-heart text-color-light bg-color-primary heart-icon"></i>
+							<i class="fa fa-heart text-color-light bg-color-primary heart-icon"></i>
 							<img class="dish-img" src="./assets/images/Vegetable salad.png" alt="Vegetable salad" />
 							<h2 class="text-capitalize">vegetable salad</h2>
 							<small class="text-capitalize">description of the item</small>
@@ -250,7 +254,7 @@
 							</div>
 						</div>
 						<div class="dish-card bg-color-white shadow-bottom">
-							<i class="fa fa-regular fa-heart text-color-light bg-color-primary heart-icon"></i>
+							<i class="fa fa-heart text-color-light bg-color-primary heart-icon"></i>
 							<img class="dish-img" src="./assets/images/Egg salad.png" alt="Egg salad" />
 							<h2 class="text-capitalize">egg vegi salad</h2>
 							<small class="text-capitalize">description of the item</small>
@@ -266,50 +270,45 @@
 				</div>
 			</section>
 
-			<section class="container py-3 testimonials-container">
-				<div class="flex-space-between-center container">
-					<div class="position-relative w-100">
-						<div
-							class="position-relative top-94 w-60 bg-color-primary h-20 border-radius-top-circle"></div>
-						<img
-							class="w-60 position-absolute -left-20 -top-150"
-							src="./assets/images/pngwing 2.png"
-							alt="pngwing 2" />
-						<div class="w-65 left-100 flex-space-between-center position-absolute top-250">
+			<section class="testimonials-container">
+				<div>
+					<div>
+						<img src="./assets/images/pngwing 2.png" alt="pngwing 2" />
+						<div>
 							<span class="font-size-medium rotate-left">😋</span>
 							<span class="font-size-medium rotate-right">🍕</span>
 						</div>
-						<div class="w-10 popup bottom-30 right-0 border-top-left">
+						<div class="popup">
 							<b class="text-capitalize">our best chef 😁</b>
 						</div>
 					</div>
-					<div class="d-flex flex-col justify-content-end w-80">
-						<h5 class="text-uppercase text-color-red">testimonials</h5>
-						<h1 class="text-capitalize font-size-big py-3">what our customers say about us</h1>
-						<p>
-							"I had the pleasure of dining at Foodi last night, and i'm still raving about the experience!
-							The attention to detail in presentation and service was impeccable"
-						</p>
-						<div class="d-flex align-items-center py-3">
-							<img
-								class="w-5 h-5 border-circle box-siz-border border-5"
-								src="./assets/images/portrait-lovely-blond-female-part-time-employee-talking-manager-customer-support-removebg-preview 1.png"
-								alt="" />
-							<img
-								class="w-5 h-5 border-circle box-siz-border border-5 -m-l-2"
-								src="./assets/images/image 10.png"
-								alt="" />
-							<img
-								class="w-5 h-5 border-circle box-siz-border border-5 -m-l-2 m-r-2"
-								src="./assets/images/image 11.png"
-								alt="" />
-							<div class="flex-space-between-center flex-col">
-								<h3 class="text-capitalize">customer feedback</h3>
-								<div class="d-flex flex-gap-small align-items-center">
-									<i class="fa fa-star text-color-yellow"></i>
-									<b>4.9</b>
-									<p>(18.6k reviews)</p>
-								</div>
+				</div>
+				<div class="d-flex flex-col justify-content-end">
+					<h5 class="text-uppercase text-color-red">testimonials</h5>
+					<h1 class="text-capitalize font-size-big py-3">what our customers say about us</h1>
+					<p>
+						"I had the pleasure of dining at Foodi last night, and i'm still raving about the experience!
+						The attention to detail in presentation and service was impeccable"
+					</p>
+					<div class="d-flex align-items-center py-3">
+						<img
+							class="w-5 h-5 border-circle box-siz-border border-5"
+							src="./assets/images/portrait-lovely-blond-female-part-time-employee-talking-manager-customer-support-removebg-preview 1.png"
+							alt="" />
+						<img
+							class="w-5 h-5 border-circle box-siz-border border-5 -m-l-2"
+							src="./assets/images/image 10.png"
+							alt="" />
+						<img
+							class="w-5 h-5 border-circle box-siz-border border-5 -m-l-2 m-r-2"
+							src="./assets/images/image 11.png"
+							alt="" />
+						<div class="flex-space-between-center flex-col">
+							<h3 class="text-capitalize">customer feedback</h3>
+							<div class="d-flex flex-gap-small align-items-center">
+								<i class="fa fa-star text-color-yellow"></i>
+								<b>4.9</b>
+								<p>(18.6k reviews)</p>
 							</div>
 						</div>
 					</div>
@@ -318,7 +317,7 @@
 
 			<section class="container">
 				<div class="d-flex">
-					<div class="d-flex flex-col w-50">
+					<div class="d-flex flex-col w-40">
 						<h5 class="text-uppercase text-color-red">our story & services</h5>
 						<h1 class="text-capitalize font-size-big py-3">our culinary journey and services</h1>
 						<p class="font-size-small">
@@ -497,14 +496,14 @@
 					</ul>
 				</div>
 				<div class="d-flex flex-row my-3">
-					<i
-						class="fa fa-brands fa-facebook-f circle font-size-small p-1 text-color-light bg-color-primary m-r-2"></i>
-					<i
-						class="fa fa-brands fa-instagram circle font-size-small p-1 bg-color-light-seconder m-r-2"></i>
-					<i
-						class="fa fa-brands fa-twitter circle font-size-small p-1 bg-color-light-seconder m-r-2"></i>
-					<i
-						class="fa fa-brands fa-youtube circle font-size-small p-1 bg-color-light-seconder m-r-2"></i>
+					<a
+						class="fa fa-brands fa-facebook-f circle font-size-small p-1 bg-color-light-seconder m-r-2"></a>
+					<a
+						class="fa fa-brands fa-instagram circle font-size-small p-1 bg-color-light-seconder m-r-2"></a>
+					<a
+						class="fa fa-brands fa-twitter circle font-size-small p-1 bg-color-light-seconder m-r-2"></a>
+					<a
+						class="fa fa-brands fa-youtube circle font-size-small p-1 bg-color-light-seconder m-r-2"></a>
 					<p class="m-auto">Copyright &copy; 2023 Dscode | All rights reserved</p>
 				</div>
 			</footer>
