@@ -69,7 +69,17 @@
 .nav {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 10rem;
+	/* margin-bottom: 10rem; */
+}
+.header {
+	position: sticky;
+	top: 0rem;
+	background-color: var(--bg-primary);
+	padding: 1rem 10%;
+	border-bottom: 1px solid var(--bg-secondary);
+	/* box-shadow: 0px 1px 5px 5px var(--bg-secondary); */
+	z-index: 100;
+	/* width: 100; */
 }
 .nav-list {
 	display: flex;
@@ -150,8 +160,8 @@
 	position: relative;
 }
 .img-container {
-	width: 500px;
-	height: 500px;
+	width: 30rem;
+	height: 30rem;
 	background: var(--primary-color);
 	border-radius: 50%;
 	position: relative;
@@ -257,10 +267,9 @@
 	align-items: center;
 	gap: 3rem;
 	position: absolute;
-	/* width: inherit; */
 	left: 25px;
 	transform: translateX(0px);
-	transition: transform 2s;
+	transition: transform 1500ms;
 	border-radius: 2rem;
 }
 .dish-card {
@@ -341,12 +350,12 @@ li {
 i {
 	cursor: pointer;
 }
-a{
+a {
 	text-decoration: none;
 	color: black;
 }
-footer ul li a:hover{
-	color:var(--primary-color)
+footer ul li a:hover {
+	color: var(--primary-color);
 }
 footer div:last-of-type a {
 	display: flex;
@@ -460,8 +469,27 @@ footer div:last-of-type a:hover {
 .shadow-bottom {
 	box-shadow: 0px 0px 10px 1px rgb(205, 205, 205);
 }
-.gray-effect:hover,.gray-effect:hover path:not(path:first-of-type){
+.gray-effect:hover,
+.gray-effect:hover path:not(path:first-of-type) {
 	filter: grayscale(100%);
 	fill: gray;
-
+}
+.hover-primary-color:hover {
+	color: var(--primary-color);
+}
+@media screen and (max-width: 720px) {
+	body{
+		width: 100vw;
+	}
+	.main {
+		width: 100vw;
+		margin: 0px;
+	}
+	.right-container {
+		display: none;
+	}
+	.left-container {
+		display: flex;
+		width: 100%;
+	}
 }
