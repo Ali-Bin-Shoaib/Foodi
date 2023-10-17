@@ -60,6 +60,7 @@
 .text-color-primary {
 	color: var(--primary-color);
 }
+
 .main {
 	padding: 2%;
 	width: 75%;
@@ -259,7 +260,7 @@
 	/* width: inherit; */
 	left: 25px;
 	transform: translateX(0px);
-	transition: transform 1s;
+	transition: transform 2s;
 	border-radius: 2rem;
 }
 .dish-card {
@@ -336,16 +337,24 @@ ul {
 li {
 	margin-bottom: 1rem;
 }
-li,
+
 i {
 	cursor: pointer;
 }
-footer div:last-of-type i {
+a{
+	text-decoration: none;
+	color: black;
+}
+footer ul li a:hover{
+	color:var(--primary-color)
+}
+footer div:last-of-type a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-weight: bold;
 }
-footer div:last-of-type i:hover {
+footer div:last-of-type a:hover {
 	background: var(--primary-color);
 	color: var(--white);
 }
@@ -450,4 +459,9 @@ footer div:last-of-type i:hover {
 }
 .shadow-bottom {
 	box-shadow: 0px 0px 10px 1px rgb(205, 205, 205);
+}
+.gray-effect:hover,.gray-effect:hover path:not(path:first-of-type){
+	filter: grayscale(100%);
+	fill: gray;
+
 }
