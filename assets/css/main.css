@@ -12,6 +12,7 @@
 	--gray: #efefef;
 	--yellow: #ffe605;
 	--black: black;
+	--light-gray: #868484;
 	--bg-secondary: #c1f1c6;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -54,8 +55,11 @@
 .text-color-dark {
 	color: var(--black);
 }
-.text-color-light {
+.text-color-white {
 	color: var(--white);
+}
+.text-color-light-gary {
+	color: var(--light-gray);
 }
 .text-color-primary {
 	color: var(--primary-color);
@@ -394,8 +398,12 @@ a {
 	text-decoration: none;
 	color: black;
 }
+a,
+i {
+	font-size: 20px;
+}
 .container {
-	margin: 10rem 0rem;
+	margin: 5rem 0rem;
 }
 .text-center {
 	text-align: center;
@@ -410,14 +418,17 @@ a {
 .letter-spacing-0 {
 	letter-spacing: 0px;
 }
+section p :not(.service-card p) {
+	font-size: 30px;
+}
 .font-size-small {
 	font-size: 20px;
 }
 .font-size-medium {
-	font-size: 30px;
+	font-size: 50px;
 }
 .font-size-big {
-	font-size: 50px;
+	font-size: 70px;
 }
 .circle {
 	width: 1rem;
@@ -614,9 +625,9 @@ a {
 		border-radius: 1rem 0 1rem 1rem;
 		box-sizing: border-box;
 	}
-		#collapse .nav-list{
-			margin-top: 2rem;
-		}
+	#collapse .nav-list {
+		margin-top: 2rem;
+	}
 	#collapse .fa-grip-lines {
 		font-size: x-large;
 		position: absolute;
